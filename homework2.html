@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title></title>
+	<script>
+		function reverse()
+		{
+			var a=document.getElementById('a').value;
+			var arr=a.split("");
+			document.getElementById('b').innerHTML=arr.reverse().join("");
+		}
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+<textarea name="Input" id="a" placeholder="Input your number"></textarea>
+<textarea name="Input" id="b" placeholder="Last digit in English" disabled></textarea>
+<input type="button"  onclick="reverse()" value="Reverse"/>
+</body>
+</html>

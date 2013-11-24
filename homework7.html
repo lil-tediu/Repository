@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title></title>
+	<script>
+		
+		function check()
+		{
+			var a=document.getElementById('a').value;
+			var arr=a.split(", ");
+		f()
+		function f()
+		{	
+			var arr1=[3, 4, 1, 3, 4, 4, 5, 3]
+			for (var i=0; i<=arr.length-1; i++)
+			{	
+				if((arr[i]>arr[i-1]) && (arr[i]>arr[i+1]))
+				{
+					var d=i;
+					break;
+				}
+				else
+				{	
+					d=-1;
+				}
+			}
+			return d;
+		}
+
+			document.getElementById('b').innerHTML="The index is: "+f();
+		}		
+
+	</script>
+</head>
+<body>
+<textarea name="Input" id="a" placeholder="Input numbers, separated by ',' and space"></textarea>
+<textarea name="Input" id="b" placeholder="Index of the  first number, that is bigger than it's neighbors" disabled></textarea>
+<input type="button"  onclick="check()" value="Find"/>
+</body>
+</html>

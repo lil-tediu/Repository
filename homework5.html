@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title></title>
+	<script>
+		function find()
+		{
+			var a=document.getElementById('a').value;
+			var arr=a.split(", ");
+			var b=document.getElementById('b').value;
+			d(arr, b);
+			function d(arr, b)
+			{
+			var count=0;
+
+            for (var i=0; i<arr.length; i++)
+			{
+				if (arr[i]==b)
+				{
+					count++
+				}
+			}
+			document.getElementById('c').innerHTML="The number: "+ b +" Appears "+ count +" time(s)";
+			}
+		
+		}
+
+	</script>
+</head>
+<body>
+<textarea name="Input" id="a" placeholder="Input your numbers, separated by ',' and space"></textarea>
+<textarea name="Input" id="b" placeholder="Input the number"></textarea>
+<textarea name="Input" id="c" placeholder="Number of numbers" disabled></textarea>
+<textarea name="Input" id="d" placeholder="Does it work properly?" disabled></textarea>
+<input type="button"  onclick="find()" value="Find"/>
+</body>
+</html>

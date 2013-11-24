@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title></title>
+	<script>
+		function find()
+		{
+			var a=document.getElementById('a').value;
+			var my_array=a.split("");
+			var last_element=my_array[my_array.length - 1];
+			if (last_element==0)
+			{
+				document.getElementById('b').innerHTML="Null";
+			}
+			if (last_element==1)
+			{
+				document.getElementById('b').innerHTML="One";
+			}
+			if (last_element==2)
+			{
+				document.getElementById('b').innerHTML="Two";
+			}
+			if (last_element==3)
+			{
+				document.getElementById('b').innerHTML="Three";
+			}
+			if (last_element==4)
+			{
+				document.getElementById('b').innerHTML="Four";
+			}
+			if (last_element==5)
+			{
+				document.getElementById('b').innerHTML="Five";
+			}
+			if (last_element==6)
+			{
+				document.getElementById('b').innerHTML="Six";
+			}
+			if (last_element==7)
+			{
+				document.getElementById('b').innerHTML="Seven";
+			}
+			if (last_element==8)
+			{
+				document.getElementById('b').innerHTML="Eight";
+			}
+			if (last_element==9)
+			{
+				document.getElementById('b').innerHTML="Nine";
+			}
+		}			
+
+	</script>
+</head>
+<body>
+<textarea name="Input" id="a" placeholder="Input your number"></textarea>
+<textarea name="Input" id="b" placeholder="Last digit in English"></textarea>
+<input type="button"  onclick="find()" value="Find"/>
+</body>
+</html>
