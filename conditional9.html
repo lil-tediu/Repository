@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title></title>
+	<script>
+		function check()
+			{
+				var a=document.getElementById("a").value;
+				a=parseInt(a);
+				var b=document.getElementById("b").value;
+				b=parseInt(b);
+				var h=document.getElementById("h").value;
+				h=parseInt(h);
+				var S=(a+b)*h/2
+
+				if(a<0 || b<0 || h<0) 
+				{
+					alert("Invalid Value")
+					return
+				}
+				else
+				{
+					alert("The area is:"+S)
+				}	
+
+
+
+			}
+
+
+
+
+	</script>
+
+</head>
+<body>
+	<form>
+	<input type="text" id="a" placeholder="Type the first side"/>
+	<input type="text" id="b" placeholder="Type the second side"/>
+	<input type="text" id="h" placeholder="Type the height"/>
+	<br />
+	<br />
+	<input type="button"  onclick="check()" value="Check" />
+	<input type="reset"   value="reset" />		 	
+ 	</form>
+</body>
+</html>

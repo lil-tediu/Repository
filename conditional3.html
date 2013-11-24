@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+	function Math()
+		{
+			var a=document.getElementById("pesho").value;
+			var b=document.getElementById("ivan").value;
+			var s=a*b;
+			if (a>0 & b>0)
+			{
+				alert("The Area is:"+s);
+			}
+			else
+			{
+				alert("Invalid")
+			}
+		}
+
+</script>
+</head>
+<body>
+<input type="text" id="ivan" placeholder="Type the width"/>
+<input type="text" id="pesho" placeholder="Type the lenght"/>
+<br />
+<br />
+<input type="button"  onclick="Math()" value="Calculate" />
+</body>
+</html>

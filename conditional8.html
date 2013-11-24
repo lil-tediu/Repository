@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title></title>
+	<script>
+		function check()
+		{
+			var a=document.getElementById("y").value;
+			a=parseInt(a);
+			if (a<0)
+				{
+					alert("Invalid Number");
+					return;
+				}
+			if (a>100)
+				{
+					alert("Invalid Number");
+					return;
+				}
+
+			if (a%2!==0 & a%3!==0 & a%4!==0 & a%5!==0 & a%7!==0 & a%9!==0)
+				{
+					alert("The number is prime");
+				}	
+			else
+			{
+					alert("The number is not prime");
+			}	
+
+		}
+
+
+
+
+	</script>
+
+</head>
+<body>
+	<input type="text" id="y" placeholder="Type number"/>
+	<br />
+	<br />
+	<input type="button"  onclick="check()" value="Check" />
+</body>
+</html>

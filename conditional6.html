@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+	<script>
+		function check()
+			{
+				var x=document.getElementById("x").value;
+				x=Math.pow(x, 2);
+				var y=document.getElementById("y").value;
+				y=Math.pow(y, 2);
+
+				
+
+
+				if(x+y<=25)
+					{
+						alert("Inside the circle");
+					}
+				else
+					{
+
+						alert("Outside the circle")
+					}		
+			}
+
+
+
+
+
+	</script>
+
+</head>
+<body>
+	<input type="text" id="x" placeholder="Type the x"/>
+	<input type="text" id="y" placeholder="Type the y"/>
+	<br />
+	<br />
+	<input type="button"  onclick="check()" value="Check" />
+</body>
+</html>

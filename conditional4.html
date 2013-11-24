@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title></title>
+	<script>
+	function a()
+		{
+			var e=document.getElementById("pesho").value;
+			var p=e[e.length-3];
+			
+			if (p==7)
+				{
+					alert("true");
+				}
+			else
+				{
+
+					alert("false");
+				}	 
+		}
+
+	</script>
+</head>
+<body>
+<input type="text" id="pesho" placeholder="Your number" />
+<br />
+<br />
+<input type="button" value="Check" onclick="a()"/>
+</body>
+</html>
